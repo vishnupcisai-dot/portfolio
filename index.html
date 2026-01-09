@@ -7,42 +7,241 @@
     <style>
         *{
             margin: 0;
+            padding: 0;
             box-sizing: border-box;
+            color: white;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(14, 10, 2);
+            margin: 0;
+            padding: 0;
         }
         .main{
-            background-color: azure;
-            height: 100vh;
+        width: 100vw;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        }
+        .section1{
+            height: 45vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .section1 > div {
+            height: 100%;
+           align-content: center;
+            
+        }
+        /* heading section  */
+        .box1{
+            width: 100vw;
+            height: 10vh;
+            text-align: center;
+            align-content: center;
+            font-size: 3em;
+        }
+        .box4{
+            background-color: rgb(2, 14, 10);
+            height: 10vh;
+            text-align: center;
+            align-content: center;
+            font-size: 2em;
+        }
+        /* inner div 1  */
+        .box2{
+            width:55vw;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content:space-evenly;
+            text-align: center;
+            background-color: darkblue;
+            border: 2px solid yellow;
+        }
+        .box2 > div{
             width: 100%;
-            display: grid;
-            gap: 3px;
-            grid-template-columns: 1fr 3fr 1fr;
-            grid-template-rows: 0.3fr 2.5fr 2.5fr 0.3fr;
-            padding: 21px;
-            
+            text-align: center;
+
         }
-        .section{
-            border: 1px solid green;
-            
+        .box3{
+            width: 30vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+             background-color: rgb(14, 10, 2);
         }
-        .header{
-            grid-column: 1 / span 3;
+        .imgbox{
+            width: 80%;
+            height: 80%;
         }
-        .footer{
-            grid-column: 1 / span 3;
+        .box2hd{
+               font-family: monospace;
+            align-content: center;
+        }
+        .job{
+            background-color: blueviolet;
+            align-content: center;
+            font-size: 2.3em;
+    font-weight: bold;
+    font-family: monospace;
+        }
+        .box2{
+            position: relative;
+            top: 0;
+        }
+        .box2hd{
+            height: 10vh;
+            font-size: 4em;
+        }
+        .job{
+            height: 5vh;
+        }
+        .boxmain{
+            height: 25vh;
+        }
+        button{
+            position: relative;
+            top: -22px;
+            background-color: black;
+            padding: 13px 32px;
+            font-size: 1.0em;
+            border-radius: 12px;
+        }
+        .boxmain{
+            align-content: center;
+            padding: 42px;
+            font-size: 1.2em;
+        }
+        .box5{
+            display: flex;
+            gap: 21px;
+            padding: 23px 41px;
+            height: 35vh;
+        }
+        .box5 > div{
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+        .imgbox{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwF_k2ekr1bujzpRCyXnejLo0LO8KLz2d-QA&s");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 32px;
+            border: 2px solid yellow;
+        }
+        .boxa{
+            transition: all 1s ease-in-out;
+            background-repeat: no-repeat;
+            background-size: cover;
+          background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLHhyjpRYTIGb_aZaEjBrt0P8QqiAeE4RRrA&s");
+        }
+        .boxa:hover{
+            transform: scale3d(1,.9,0.8);
+        }
+        /* media query section  */
+        @media(max-width: 600px){
+.section1 {
+    height: 80vh;
+    display: grid
+; 
+    grid-template-rows: 50% 50%;
+    align-items: center;
+    justify-content: center;
+}
+.section1 > div {
+
+    align-content: center;
+}
+.box2hd {
+    height: 6vh;
+    font-size: 2em;
+            position: relative;
+        top: 8px;
+}
+.box4{
+    font-size: 1.5em;
+}
+.box5 {
+    display: flex
+;
+    gap: 21px;
+    padding: 23px 41px;
+    height: 35vh;
+    flex-wrap: wrap;
+}
+.boxa{
+    background-position: center;
+}
+.job {
+    top: 12px;
+        position: relative;
+    background-color: blueviolet;
+    align-content: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: monospace;
+}
+.box2 {
+    /* width: 55vw; */
+    width: 100%;
+    display: flex
+;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: darkblue;
+    /* border: 2px solid yellow; */
+}
+.boxmain {
+    align-content: center;
+    padding: 13px;
+    font-size: 0.7em;
+}
+button {
+    position: relative;
+            top: -24px;
+    background-color: black;
+    padding: 13px 32px;
+    font-size: 1.0em;
+    border-radius: 12px;
+}
+.box3{
+    width: 100vw;
+}
+.box5 > div{
+        margin-top: 44px;
+}
         }
     </style>
 </head>
 <body>
     <div class="main">
+        <div class="box1">portfolio</div>
+        <div class="section1">
+        <div class="box2">
+            <div class="box2hd">vishnu p</div>
+            <div class="job">Software Developer</div>
+            <div class="boxmain">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit neque atque eaque maxime aut fugit libero quae sequi fugiat placeat, et nobis vero minus optio enim veniam laboriosam fuga officia excepturi laudantium eius accusantium. Dolore nisi quisquam similique error ipsum facere reprehenderit est dolorem voluptates repellat. Accusamus repudiandae ea in delectus nam! Adipisci expedita accusamus omnis quod aliquid dolor minus ipsa, natus praesentium aperiam ab, iusto harum dolores beatae vero cum enim, possimus nesciunt maiores sint sapiente amet iste! Quis et odio soluta veritatis repudiandae dolore aperiam inventore, unde illum id quisquam nulla, vero iusto similique eligendi commodi amet tempore?</div>
+            <button>Submit</button>
+        </div>
+        <div class="box3">
+              <div class="imgbox"></div>
+        </div>
+        </div>
+        <div class="box4">Mzk@gmail.com</div>
 
-        <div class="section | header">header</div>
-        <div class="section |  " style="min-width: 200px;">hello1</div>
-        <div class="section" style="min-width: 400px;">hello2</div>
-        <div class="section" style="min-width:200px;">hello3</div>
-        <div class="section">hello4</div>
-        <div class="section">hello5</div>
-        <div class="section">hello6</div>
-        <div class="section | footer">footer</div>
+        <div class="box5">
+            <div class="boxa"> </div>
+            <div class="boxa"> </div>
+            <div class="boxa"> </div>
+            <div class="boxa"> </div>
+        </div>
     </div>
 </body>
 </html>
